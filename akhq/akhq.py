@@ -35,6 +35,9 @@ class client:
     def topics(self, cluster_id):
         return self.get(f'/api/{cluster_id}/topic').json()['results']
 
+    def consumer_groups(self, cluster_id):
+        return self.get(f'/api/{cluster_id}/group').json()['results']
+
     def get(self, path):
         return self.http.get(self._url + path, auth=self._auth)
 
