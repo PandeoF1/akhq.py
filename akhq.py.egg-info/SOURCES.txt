@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-requirements.txt
-akhq/__init__.py
-akhq/akhq.py
-akhq.py.egg-info/PKG-INFO
-akhq.py.egg-info/SOURCES.txt
-akhq.py.egg-info/dependency_links.txt
-akhq.py.egg-info/top_level.txt
