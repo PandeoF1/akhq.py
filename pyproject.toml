@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "akhq.py"
-dynamic = ["version", "dependencies"]
+dynamic = ["dependencies"]
 authors = [
     { name = "Theo Nard", email = "theo.nard18@gmail.com" },
 ]
@@ -17,9 +17,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 keywords = ["akhq", "api", "wrapper", "python"]
+version = "0.0.1"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
-version = {
-  source = "git.tag"  # Use git tags for versioning
-}
