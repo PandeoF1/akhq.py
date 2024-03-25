@@ -20,4 +20,6 @@ keywords = ["akhq", "api", "wrapper", "python"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
-version = {attr = "my_package.VERSION"}
+version = {
+  source = "git.tag"  # Use git tags for versioning
+}
